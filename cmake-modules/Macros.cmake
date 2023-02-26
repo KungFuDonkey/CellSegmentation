@@ -76,7 +76,7 @@ ENDMACRO()
 # --------------------------------------------- LibtorchSegmentation ------------------------------------------------
 
 MACRO(TARGET_LINK_LIBTORCH_SEGMENTATION TARGET)
-    target_link_libraries(${TARGET} ${CMAKE_BINARY_DIR}\\libs\\LibtorchSegmentation\\Debug\\LibtorchSegmentation.lib)
+    target_link_libraries(${TARGET} LibtorchSegmentation)
     target_include_directories(${TARGET} PUBLIC ${CMAKE_SOURCE_DIR}\\libs\\LibtorchSegmentation\\src)
 ENDMACRO()
 
